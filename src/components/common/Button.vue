@@ -52,7 +52,7 @@ const onClick = (): void => {
     :style="`width: ${buttonWidth}; height: ${height}px; font-size: calc(${height}px / 2)`"
     @click="onClick"
   >
-    <span v-if="isLoading"> Loading... </span>
+    <span v-if="isLoading" id="unit-test"> Loading... </span>
     <span v-else>
       {{ name }}
     </span>
